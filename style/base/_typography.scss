@@ -1,0 +1,31 @@
+.heading-primary {
+	text-align: center;
+	font-size: 7rem;
+	font-weight: 700;
+	margin: 1rem 0;
+}
+
+.heading-secondary {
+	font-size: 3rem;
+	text-align: center;
+	margin: 3rem 0;
+	position: relative;
+}
+
+.heading-secondary::after {
+	content: "";
+	position: absolute;
+	bottom: 0; // Remark: In case of ::after bottom should be zero!
+	left: 0;
+	height: 0.2rem;
+	width: 100%;
+	background-color: $color-yellow-light;
+}
+
+.heading-tertiary {
+	font-size: 2.5rem;
+}
+
+.paragraph {
+	text-align: justify;
+}

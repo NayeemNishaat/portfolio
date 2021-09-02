@@ -1,0 +1,33 @@
+.header {
+	background-image: linear-gradient(rgba(black, 0.6), rgba(black, 0.6)),
+		url(../image/header.jpg);
+	color: $color-grey-light;
+	background-size: cover;
+	display: grid;
+	grid-template-rows: 8rem 1fr;
+}
+
+.info {
+	align-self: center;
+	margin-top: -8rem;
+	padding: 0 1rem;
+}
+
+.info__description {
+	font-size: 3rem;
+	font-weight: 400;
+	text-align: center;
+
+	@include respond(phone-mid) {
+		font-size: 2.5rem;
+	}
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 8rem;
+	z-index: 1;
+}

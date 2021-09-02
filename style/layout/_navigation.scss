@@ -1,0 +1,45 @@
+.nav {
+	display: flex;
+	justify-content: center;
+	background-color: $color-green-light;
+
+	&__list {
+		list-style: none;
+		display: flex;
+		flex: 0 0 60%;
+		justify-content: space-evenly;
+		align-items: center;
+
+		@include respond(tab-port) {
+			flex: 0 0 70%;
+		}
+
+		@include respond(phone-mid) {
+			flex: 0 0 80%;
+		}
+
+		@include respond(phone) {
+			flex: 0 0 90%;
+		}
+	}
+
+	&__item {
+		border: 1px solid $color-grey-dark-2;
+		border-radius: 2rem;
+	}
+
+	&__link:link,
+	&__link:visited {
+		text-decoration: none;
+		color: $color-grey-dark;
+		font-weight: 700;
+		font-size: 2.5rem;
+		padding: 1rem 2rem;
+		transition: all 0.5s;
+	}
+
+	&__link:hover,
+	&__link:active {
+		color: deeppink;
+	}
+}

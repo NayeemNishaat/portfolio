@@ -1,0 +1,84 @@
+.form {
+	display: flex;
+	justify-content: center;
+
+	&__container {
+		flex: 0 0 35%;
+		border: 1px solid #ccc;
+		padding: 2rem;
+		border-radius: 20px;
+
+		@include respond(tab-land) {
+			flex: 0 0 40%;
+		}
+
+		@include respond(phone) {
+			flex: 0 0 50%;
+		}
+	}
+
+	&__heading {
+		width: 83%;
+		margin: 0 auto 4rem auto;
+	}
+
+	&__group:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+
+	&__input {
+		font-size: 1.8rem;
+		font-family: inherit;
+		color: inherit;
+		padding: 1.5rem 2rem;
+		border-radius: 0.5rem;
+		background-color: rgba($color-white, 0.5);
+		border: none;
+		border-bottom: 3px solid transparent;
+		width: 100%;
+		display: block;
+		transition: all 0.5s;
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+			border-bottom: 3px solid $color-green-light;
+
+			&:invalid {
+				border-bottom: 3px solid $color-yellow-dark;
+			}
+		}
+
+		&::-webkit-input-placeholder {
+			color: $color-grey-dark-2;
+			text-align: center;
+			// line-height: 120px;
+			padding: 4.6rem 0;
+		}
+
+		&:placeholder-shown + .form__label {
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(-4.2rem);
+		}
+	}
+
+	&__label {
+		display: block;
+		font-size: 1.2rem;
+		font-weight: 700;
+		margin-left: 2rem;
+		margin-top: 0.7rem;
+		transition: all 0.5s;
+	}
+
+	&__button {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__btn {
+		flex-basis: 40%;
+		font-size: 2rem;
+	}
+}

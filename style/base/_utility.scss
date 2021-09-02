@@ -1,0 +1,37 @@
+.u-link {
+	&:link,
+	&:visited {
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 2rem;
+		color: $color-black;
+		border-bottom: 2px solid transparent;
+		transition: all 0.7s;
+	}
+
+	&:hover,
+	&:active {
+		border-bottom: 2px solid springgreen;
+		color: crimson;
+	}
+}
+
+.u-underline {
+	position: relative;
+	&::after {
+		position: absolute;
+		content: "";
+		bottom: 0;
+		left: 0;
+		height: 2px;
+		width: 100%;
+		background-color: springgreen;
+	}
+
+	&--section {
+		&::after {
+			background-color: $color-grey-light-3;
+			height: 1px;
+		}
+	}
+}

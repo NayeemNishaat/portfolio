@@ -1,0 +1,51 @@
+.education {
+	display: grid;
+	align-items: start;
+	justify-items: start;
+	grid-template-columns: minmax(min-content, 20rem) 1fr;
+}
+
+.experience {
+	display: grid;
+	align-items: start;
+	justify-items: start;
+	grid-template-columns: minmax(min-content, 20rem) 1fr;
+}
+
+.project {
+	display: grid;
+	align-items: start;
+	justify-items: start;
+	grid-template-columns: minmax(min-content, 20rem) 1fr;
+
+	&__list {
+		display: flex;
+		align-items: start;
+		flex-direction: column;
+		gap: 1rem;
+	}
+}
+
+.certificate {
+	display: grid;
+	align-items: start;
+	justify-items: start;
+	grid-template-columns: minmax(min-content, 20rem) 1fr;
+}
+
+.skill {
+	display: grid;
+	align-items: start;
+	justify-items: start;
+	grid-template-columns: minmax(min-content, 20rem) 1fr;
+	font-size: 2rem;
+
+	&__list {
+		list-style: "\2605";
+		margin-left: 1rem;
+	}
+
+	&__item {
+		padding-left: 0.5rem;
+	}
+}

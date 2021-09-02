@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style/main.scss" />
+		<link rel="shortcut icon" href="./image/favicon.ico" />
+		<!-- Favicon from https://redketchup.io/favicon-generator -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="./script/jquery.waypoints.min.js"></script>
+		<script defer src="./script/script.js"></script>
+
+		<title>Portfolio</title>
+	</head>
+	<body class="container">
+		<header class="header" id="home">
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#home" class="nav__link">Home</a>
+					</li>
+					<li class="nav__item">
+						<a href="#about" class="nav__link">About</a>
+					</li>
+					<li class="nav__item">
+						<a href="#resume" class="nav__link">Resume</a>
+					</li>
+					<li class="nav__item">
+						<a href="#contact" class="nav__link">Contact</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="info">
+				<h1 class="heading-primary info__heading">
+					I'm a Web Developer
+				</h1>
+				<p class="info__description">
+					This is Yeakub! A passionate front-end web developer. I work
+					with HTML5, CSS3, SCSS, Bootstrap4/5, JavaScript, jQuery and
+					React.
+				</p>
+			</div>
+		</header>
+
+		<section
+			class="section-about u-underline u-underline--section"
+			id="about"
+		>
+			<div class="about">
+				<div class="about__image-container">
+					<img
+						class="about__image"
+						src="./image/profile.jpg"
+						alt="Profile Picture"
+					/>
+				</div>
+
+				<div class="about__info-container">
+					<h2 class="heading-secondary about__heading-about">
+						About Me
+					</h2>
+					<p class="about__description paragraph">
+						I have 2 years of experience in working with JavaScript
+						(ES6+), jQuery and 3 years of experience in working with
+						HTML5, CSS3, SCSS, Bootstrap. I developed a lot of
+						webpages using these modern technologies and practices.
+						I did an Internship on front-end web development on
+						Bengal Software. I decided to work with javaScript
+						because this is the most popular and highly used
+						scripting language. Now I'm learning React and my goal
+						is to be an MERN full-stack developer. I always try to
+						write clean and optimized code while maintaining
+						seperation of concern. I also like to solve problems
+						too. I solved problems on various online sites.
+					</p>
+				</div>
+
+				<div class="about__contact-container">
+					<h2 class="heading-secondary about__heading-contact">
+						Contact Information
+					</h2>
+
+					<div class="about__contact">
+						<ul class="about__details">
+							<li class="about__detail">Kazi Md Yeakub Ali</li>
+							<li class="about__detail">
+								Rajendrapur Cantonment, Gazipur
+							</li>
+							<li class="about__detail">Dhaka, 1742</li>
+							<li class="about__detail">01849432850</li>
+							<li class="about__detail">
+								NayeemNishaat@gmail.com
+							</li>
+						</ul>
+						<a
+							class="about__download btn"
+							href="https://drive.google.com/uc?id=1NhMSQzAbfjMa3rBu5pIxftlQFRTImeim&export=download"
+							>Download Resume</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-resume" id="resume">
+			<div class="education">
+				<h3 class="education__heading heading-tertiary u-underline">
+					Education
+				</h3>
+				<div class="education__details">
+					<h3 class="education__university heading-tertiary">
+						Bangladesh University of Professionals
+					</h3>
+					<p class="education__degree">
+						B. Sc. in Information and Communication Engineering
+						(2017 - 2020)
+					</p>
+					<p class="education__cgpa">CGPA - 3.76</p>
+				</div>
+			</div>
+
+			<div class="experience">
+				<h3 class="experience__heading heading-tertiary u-underline">
+					Experience
+				</h3>
+				<div class="experience__details">
+					<h3 class="experience__place heading-tertiary">
+						Bengal Software
+					</h3>
+					<h4 class="experience__title heading-quaternary">
+						Front-End Developer Intern
+					</h4>
+					<p class="experience__description paragraph">
+						Here I worked as a front-end developer intern. I
+						basically did this internship on React and did some
+						projects. The internship period was 3 months.
+					</p>
+				</div>
+			</div>
+
+			<div class="project">
+				<h3 class="heading-tertiary project__heading u-underline">
+					Projects
+				</h3>
+				<div class="project__list">
+					<a
+						target="blank"
+						href="https://labyrinth-nexter.netlify.app"
+						class="project__item u-link"
+						>Nexter - A Realtor Website</a
+					>
+					<a
+						target="blank"
+						href="https://nayeemnishaat.github.io/natours/"
+						class="project__item u-link"
+						>Natours - A Tour Booking Website</a
+					>
+					<a
+						target="blank"
+						href="https://labyrinth-map.netlify.app"
+						class="project__item u-link"
+						>Interactive Map - A React App</a
+					>
+					<a
+						target="blank"
+						href="https://nayeemnishaat.github.io/omni-food/"
+						class="project__item u-link"
+						>Omni Food - A Food Delivery Website</a
+					>
+					<a
+						target="blank"
+						href="https://nayeemnishaat.github.io/conqueror-gaming/"
+						class="project__item u-link"
+						>Conqueror Gaming - A Game Currency Selling Website</a
+					>
+				</div>
+			</div>
+
+			<div class="certificate">
+				<h3 class="heading-tertiary certificate__heading u-underline">
+					Certificates
+				</h3>
+
+				<div class="certificate__info">
+					<div class="certificate__details">
+						<h3 class="heading-tertiary certificate__name">
+							The Complete JavaScript Course - From Zero to Expert
+						</h3>
+						<p class="certificate__vendor">Udemy</p>
+					</div>
+					<div class="certificate__details">
+						<h3 class="heading-tertiary certificate__name">
+							React - The Complete Guide
+						</h3>
+						<p class="certificate__vendor">Udemy</p>
+					</div>
+					<div class="certificate__details">
+						<h3 class="heading-tertiary certificate__name">
+							Build Responsive Real World Websites with HTML5 and
+							CSS3
+						</h3>
+						<p class="certificate__vendor">Udemy</p>
+					</div>
+					<div class="certificate__details">
+						<h3 class="heading-tertiary certificate__name">
+							Advanced CSS and Sass Flexbox, Grid, Animations and
+							More
+						</h3>
+						<p class="certificate__vendor">Udemy</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="skill">
+				<h3 class="heading-tertiary skill__heading u-underline">
+					Skills
+				</h3>
+				<ul class="skill__list">
+					<li class="skill__item">HTML5</li>
+					<li class="skill__item">CSS3</li>
+					<li class="skill__item">SCSS</li>
+					<li class="skill__item">Bootstrap4/5</li>
+					<li class="skill__item">JavaScript</li>
+					<li class="skill__item">jQuery</li>
+					<li class="skill__item">React</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section-contact" id="contact">
+			<div>
+				<h2 class="heading-secondary form__heading">Write to Me</h2>
+			</div>
+			<div class="form">
+				<form action="#" class="form__container">
+					<div class="form__group">
+						<input
+							id="name"
+							type="text"
+							placeholder="Full Name"
+							required
+							class="form__input"
+						/>
+
+						<label for="name" class="form__label">Full Name</label>
+					</div>
+
+					<div class="form__group">
+						<input
+							id="email"
+							type="email"
+							placeholder="Email"
+							required
+							class="form__input"
+						/>
+
+						<label for="email" class="form__label">Email</label>
+					</div>
+
+					<div class="form__group">
+						<textarea
+							class="form__input form__textarea"
+							placeholder="Message"
+							required
+							name="textarea"
+							id="textarea"
+							cols="30"
+							rows="5"
+						></textarea>
+					</div>
+
+					<div class="form__group form__button">
+						<button class="btn form__btn">Send</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<footer class="section-footer">
+			<div class="footer">
+				<a
+					class="footer__link"
+					href="https://github.com/NayeemNishaat/"
+					target="blank"
+				>
+					<svg class="footer__svg">
+						<use href="./image/sprite.svg#icon-github"></use>
+					</svg>
+				</a>
+
+				<a
+					class="footer__link"
+					href="https://www.linkedin.com/in/nayeem-nishaat-7b811718b/"
+					target="blank"
+				>
+					<svg class="footer__svg">
+						<use href="./image/sprite.svg#icon-linkedin"></use>
+					</svg>
+				</a>
+				<a
+					class="footer__link"
+					href="mailto:NayeemNishaat@gmail.com"
+					target="blank"
+				>
+					<svg class="footer__svg">
+						<use href="./image/sprite.svg#icon-mail"></use>
+					</svg>
+				</a>
+
+				<a
+					class="footer__link"
+					href="https://twitter.com/NayeemNishaat"
+					target="blank"
+				>
+					<svg class="footer__svg">
+						<use href="./image/sprite.svg#icon-twitter"></use>
+					</svg>
+				</a>
+
+				<a
+					class="footer__link"
+					href="https://www.facebook.com/NayeemIMI"
+					target="blank"
+				>
+					<svg class="footer__svg">
+						<use href="./image/sprite.svg#icon-facebook"></use>
+					</svg>
+				</a>
+			</div>
+
+			<div class="footer__copyright">
+				<p class="footer__text">&copy; Nayeem</p>
+			</div>
+		</footer>
+	</body>
+</html>

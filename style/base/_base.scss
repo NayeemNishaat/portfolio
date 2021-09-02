@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+	-webkit-tap-highlight-color: transparent;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+
+	@include respond(tab-land) {
+		font-size: 56.25%;
+	}
+
+	@include respond(tab-port) {
+		font-size: 50%;
+	}
+
+	@include respond(phone) {
+		font-size: 43.75%;
+	}
+}
+
+body {
+	font: 1.6rem "Expletus Sans", cursive, serif;
+}

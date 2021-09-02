@@ -1,0 +1,28 @@
+.header {
+	grid-column: full-start/full-end;
+}
+
+.section-about {
+	grid-column: center-start/center-end;
+	padding: 5rem 0;
+}
+
+.section-resume {
+	grid-column: center-start/center-end;
+	padding: 5rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+}
+
+.section-contact {
+	padding: 5rem 0;
+	grid-column: full-start/full-end;
+	background-color: $color-grey-light-2;
+}
+
+.section-footer {
+	padding: 5rem 0 3rem 0;
+	grid-column: full-start/full-end;
+	background-color: #242424;
+}

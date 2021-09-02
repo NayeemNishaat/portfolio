@@ -1,0 +1,15 @@
+.btn {
+	padding: 1rem 2rem;
+	background-color: springgreen;
+	border-radius: 0.4rem;
+	color: $color-black;
+	text-decoration: none;
+	font-weight: 700;
+	cursor: pointer;
+	border: none;
+	transition: all 0.5s;
+}
+
+.btn:hover {
+	color: deeppink;
+}

@@ -1,0 +1,23 @@
+.footer {
+	display: flex;
+	width: 40%;
+	margin: auto;
+	justify-content: space-evenly;
+
+	&__svg {
+		width: 2.5rem;
+		height: 2.5rem;
+		fill: $color-green-light;
+		transition: all 0.5s;
+	}
+
+	&__svg:hover {
+		fill: crimson;
+	}
+
+	&__copyright {
+		margin-top: 3rem;
+		text-align: center;
+		color: $color-grey-light-3;
+	}
+}
