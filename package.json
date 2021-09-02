@@ -2,7 +2,7 @@
 	"name": "portfolio",
 	"version": "1.0.0",
 	"description": "My portfolio website",
-	"main": "index.html",
+	"default": "index.html",
 	"scripts": {
 		"start": "parcel index.html",
 		"build": "parcel build index.html"
@@ -10,7 +10,8 @@
 	"author": "nayeemnishaat",
 	"license": "ISC",
 	"devDependencies": {
-		"parcel-bundler": "^1.12.5",
-		"sass": "^1.38.0"
+		"@parcel/transformer-image": "^2.0.0-rc.0",
+		"@parcel/transformer-sass": "^2.0.0-rc.0",
+		"parcel": "^2.0.0-rc.0"
 	}
 }
